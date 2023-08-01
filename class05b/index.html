@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function getData() {
+            var name = frmMain.txtName.value;
+            var gender = frmMain.rbtnGender.value;
+            alert(name + "\n" + gender);
+            alert(`${name} \n ${gender}`);
+        }
+        var objDate = Date();
+        console.log(getPKTTime(objDate))
+
+        function getPKTTime(date) {
+            var d = new Date(date),
+                month = '' + (d.getMonth() + 1),
+                day = '' + d.getDate(),
+                year = d.getFullYear();
+            var hours = String(d.getHours());
+            var minutes = String(d.getMinutes());
+            var seconds = String(d.getSeconds());
+
+            if (month.length < 2)
+                month = '0' + month;
+            if (day.length < 2)
+                day = '0' + day;
+            if (hours.length < 2)
+                hours = '0' + hours;
+            if (minutes.length < 2)
+                minutes = '0' + minutes;
+            if (seconds.length < 2)
+                seconds = '0' + seconds;
+
+            return [day, month, year].join('-');
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <form action="./index.html" method="POST" name="frmMain">
+        <label for="name">Name:</label>
+        <br />
+        <input type="text" name="txtName" placeholder="Enter the Name" required />
+        <br />
+
+        <label for="Gender">Gender: </label>
+        <input type="radio" name="rbtnGender" value="Male" /> Male
+        <input type="radio" name="rbtnGender" value="Female" /> Female
+        <br />
+
+        <label for="Email">Email: </label>
+        <br />
+        <input type="email" name="txtemail" placeholder="Enter the Email" />
+        <br />
+        <br />
+
+        <label for="DOB">DOB:</label>
+        <input type="date" name="txtDOB">
+        <br />
+
+        <label for="Address">Address: </label>
+        <br />
+        <textarea name="txtAddress"></textarea>
+        <br />
+
+        <label for="Country"> Country</label>
+        <br />
+        <select name="comboxCountry">
+            <option value="Pakistan">Pakistan</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="USA">USA</option>
+        </select>
+        <br />
+        <br />
+
+        <input type="submit" name="btnSub" value="Submit" onclick="getData()" />
+
+    </form>
+</body>
+
+</html>
