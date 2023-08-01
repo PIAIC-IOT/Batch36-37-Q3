@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var clickCount = 1;
+        function displayText(){
+            var input = prompt("message"); 
+            confirm(input); 
+            if(clickCount%2 == 0){
+                document.getElementById('renderText').innerText = ""
+                document.getElementById('btnClick').innerText = "Show Text!"
+            }
+            else{
+                document.getElementById('renderText').innerText = "Hello World"
+                document.getElementById('btnClick').innerText = "Hide Text!"
+            }
+
+            clickCount++;
+        }
+    </script>
+</head>
+<body>
+    <button id="btnClick" onclick="displayText()"> Show Text!</button>
+    <p id="renderText"></p>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  .sidebar {
+    background: #f4f4f4;
+    width: 20%;
+    padding: 20px;
+    float: left;
+  }
+  .sidebar2 {
+    background: #f4f4f4;
+    width: 20%;
+    padding: 20px;
+    float: right;
+  }
+  .content {
+    padding: 20px;
+    margin-left: 22%;
+  }
+  .footer {
+    background-color: gray;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    clear: both;
+  }

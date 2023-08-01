@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            text-align: center;
+            color: red;
+        }
+        .greenColor td{
+            color: green;
+        }
+
+        #blueColor td{
+            color: blue;
+        }
+        .aquaColor{
+            color: aqua !important;
+            /* text-align: right; */
+        }
+    </style>
+</head>
+<body>
+    <!-- // Heading -->
+    <h1>Hello World</h1> 
+    <!-- Used for Paragraph -->
+    <p>This is the first paragraph</p>  
+    <!-- For redirect to new page -->
+    <a href="http://www.google.com">This is the google website link</a>
+    <table border="1" width="100%" height="100%">
+        <tr>
+            <td colspan="2" >Full Name</td>
+            <td rowspan="2" >Roll Number</td>
+        </tr>
+        <tr>
+            <td>First Name</td>
+            <td>Last Name</td>
+        </tr>
+        <tr class="greenColor">
+            <td>Fahim</td>
+            <td>Uz Zaman</td>
+            <td>001</td>            
+        </tr>
+        <tr id="blueColor">
+            <td class="aquaColor">Ibad</td>
+            <td>Khan</td>
+            <td>002</td>            
+        </tr>
+    </table>
+</body>
+</html>
