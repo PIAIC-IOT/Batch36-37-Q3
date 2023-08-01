@@ -1,0 +1,11 @@
+{
+  "name": "class02",
+  "version": "1.0.0",
+  "description": "this is the fisrt node session",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Fahim",
+  "license": "ISC"
+}
